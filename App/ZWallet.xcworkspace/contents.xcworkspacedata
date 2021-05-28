@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:App.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/Core/Core.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/History/History.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/Login/Login.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/Register/Register.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/OTPConfirmation/OTPConfirmation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/PINConfirmation/PINConfirmation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/PINActivation/PINActivation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/Home/Home.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Module/Receiver/Receiver.xcodeproj">
+   </FileRef>
+</Workspace>

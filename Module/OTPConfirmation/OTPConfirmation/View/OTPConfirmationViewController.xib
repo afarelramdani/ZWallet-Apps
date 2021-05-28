@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OTPConfirmationViewController" customModule="OTPConfirmation" customModuleProvider="target">
+            <connections>
+                <outlet property="otpText" destination="vAA-8C-3Om" id="7Ba-UV-y8z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZWallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAn-SC-7d1">
+                    <rect key="frame" x="16" y="149" width="382" height="30.5"/>
+                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="26"/>
+                    <color key="textColor" name="Primary Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3iV-ZG-hkI">
+                    <rect key="frame" x="0.0" y="240.5" width="414" height="621.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Input Your OTP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKS-Zy-akf">
+                            <rect key="frame" x="16" y="40" width="382" height="28"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent your OTP (One Time Password) code via email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzL-K5-oIC">
+                            <rect key="frame" x="30" y="88" width="354" height="37.5"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                            <color key="textColor" red="0.22745098039215686" green="0.23921568627450979" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vAA-8C-3Om">
+                            <rect key="frame" x="16" y="175.5" width="382" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="58" id="5Ay-dv-mbV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfn-uY-Khr">
+                            <rect key="frame" x="16" y="466.5" width="382" height="57"/>
+                            <color key="backgroundColor" name="Primary Color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="57" id="Qjo-kJ-kq1"/>
+                            </constraints>
+                            <state key="normal" title="Confirm">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="confirmAction:" destination="-1" eventType="touchUpInside" id="rtx-4V-VFx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dfn-uY-Khr" secondAttribute="trailing" constant="16" id="5cD-wm-MKV"/>
+                        <constraint firstItem="nzL-K5-oIC" firstAttribute="top" secondItem="nKS-Zy-akf" secondAttribute="bottom" constant="20" id="BDI-gV-GvI"/>
+                        <constraint firstItem="vAA-8C-3Om" firstAttribute="leading" secondItem="3iV-ZG-hkI" secondAttribute="leading" constant="16" id="M3o-4T-f5n"/>
+                        <constraint firstItem="vAA-8C-3Om" firstAttribute="top" secondItem="nzL-K5-oIC" secondAttribute="bottom" constant="50" id="Sw9-R8-O18"/>
+                        <constraint firstItem="dfn-uY-Khr" firstAttribute="leading" secondItem="3iV-ZG-hkI" secondAttribute="leading" constant="16" id="V64-Qh-Zkn"/>
+                        <constraint firstAttribute="trailing" secondItem="vAA-8C-3Om" secondAttribute="trailing" constant="16" id="VAE-yF-SHS"/>
+                        <constraint firstAttribute="trailing" secondItem="nKS-Zy-akf" secondAttribute="trailing" constant="16" id="VZ6-5c-EVj"/>
+                        <constraint firstItem="dfn-uY-Khr" firstAttribute="top" secondItem="vAA-8C-3Om" secondAttribute="bottom" constant="233" id="XKp-ul-eYS"/>
+                        <constraint firstItem="nKS-Zy-akf" firstAttribute="leading" secondItem="3iV-ZG-hkI" secondAttribute="leading" constant="16" id="dNn-v5-QeV"/>
+                        <constraint firstItem="nKS-Zy-akf" firstAttribute="top" secondItem="3iV-ZG-hkI" secondAttribute="top" constant="40" id="fbM-4m-jOb"/>
+                        <constraint firstAttribute="trailing" secondItem="nzL-K5-oIC" secondAttribute="trailing" constant="30" id="ffX-yG-qUk"/>
+                        <constraint firstItem="nzL-K5-oIC" firstAttribute="leading" secondItem="3iV-ZG-hkI" secondAttribute="leading" constant="30" id="kXP-QF-3XR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Background Color"/>
+            <constraints>
+                <constraint firstItem="XAn-SC-7d1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="87P-pZ-5d4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XAn-SC-7d1" secondAttribute="trailing" constant="16" id="8J2-1C-q06"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3iV-ZG-hkI" secondAttribute="bottom" id="LWu-iC-teH"/>
+                <constraint firstItem="3iV-ZG-hkI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Yx1-iW-Lf4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3iV-ZG-hkI" secondAttribute="trailing" id="ate-5T-E3c"/>
+                <constraint firstItem="XAn-SC-7d1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="105" id="fbN-su-dcE"/>
+                <constraint firstItem="3iV-ZG-hkI" firstAttribute="top" secondItem="XAn-SC-7d1" secondAttribute="bottom" constant="61" id="sYk-v2-Ei0"/>
+            </constraints>
+            <point key="canvasLocation" x="-146" y="85"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Background Color">
+            <color red="0.98000001907348633" green="0.98799997568130493" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary Color">
+            <color red="0.3880000114440918" green="0.47499999403953552" blue="0.9570000171661377" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

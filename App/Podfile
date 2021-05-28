@@ -1,0 +1,69 @@
+platform :ios, '12.0'
+
+use_frameworks!
+
+workspace 'ZWallet'
+
+def common_dependency
+	pod 'Kingfisher'
+end
+
+target 'App' do
+
+	pod 'Moya'
+	pod 'netfox', :configurations => ['Debug']
+	common_dependency
+end
+
+target 'Core' do
+	project '../Module/Core/Core'
+
+	pod 'Moya'
+	common_dependency
+end
+
+target 'History' do
+	project '../Module/History/History'
+end
+
+target 'Home' do
+	project '../Module/Home/Home'
+
+	common_dependency
+end
+
+target 'Login' do
+	project '../Module/Login/Login'
+
+	common_dependency
+end
+
+target 'Register' do
+	project '../Module/Register/Register'
+
+	common_dependency
+end
+
+target 'OTPConfirmation' do
+	project '../Module/OTPConfirmation/OTPConfirmation'
+
+	common_dependency
+end
+
+target 'PINActivation' do
+	project '../Module/PINActivation/PINActivation'
+
+	common_dependency
+end
+
+target 'PINConfirmation' do
+	project '../Module/PINConfirmation/PINConfirmation'
+
+	common_dependency
+end
+
+target 'Receiver' do
+	project '../Module/Receiver/Receiver'
+
+	common_dependency
+end

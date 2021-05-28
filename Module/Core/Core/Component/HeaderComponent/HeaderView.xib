@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="Core" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="iN0-l3-epB" id="pEi-2h-PCr"/>
+                <outlet property="titleLabel" destination="9Wc-xZ-RZj" id="rzN-hA-GUD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="109"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmE-Hh-Vru">
+                    <rect key="frame" x="16" y="10" width="28" height="28"/>
+                    <state key="normal" image="arrow-left"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wc-xZ-RZj">
+                    <rect key="frame" x="78" y="10" width="54.5" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="Background Color"/>
+            <constraints>
+                <constraint firstItem="BmE-Hh-Vru" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Ieu-nT-wdv"/>
+                <constraint firstItem="BmE-Hh-Vru" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="OAn-D2-TWN"/>
+                <constraint firstItem="9Wc-xZ-RZj" firstAttribute="centerY" secondItem="BmE-Hh-Vru" secondAttribute="centerY" id="dJZ-Uw-RaV"/>
+                <constraint firstItem="9Wc-xZ-RZj" firstAttribute="leading" secondItem="BmE-Hh-Vru" secondAttribute="trailing" constant="34" id="lMf-ss-GK0"/>
+                <constraint firstItem="9Wc-xZ-RZj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="sfO-OS-Jjs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="36.231884057971016" y="-169.08482142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow-left" width="28" height="28"/>
+        <namedColor name="Background Color">
+            <color red="0.98000001907348633" green="0.98799997568130493" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
